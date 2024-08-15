@@ -1,0 +1,3 @@
+id,hidden_layers,architecture,activation,alpha,batch_size,learning_rate,iterations,train_score,val_score,test_score
+0,1,30,relu,0.0001,100,0.001,23,0.9996789791537088,0.9991573329588147,0.9993679997191109
+1,5,"(30, 20, 10, 5, 2)",relu,0.0001,100,0.001,35,0.9998394895768544,0.9993328885923949,0.9993504441557529
