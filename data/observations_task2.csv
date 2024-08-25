@@ -1,0 +1,199 @@
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,1,180,tanh,auto,adam,0.001,constant,177,4.206607207766394,4.213662180790718,5.065603646586928
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,1,180,tanh,auto,adam,0.001,constant,177,4.206607207766394,4.213662180790718,5.065603646586928
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,1,200,tanh,auto,adam,0.001,constant,200,4.180002304891591,4.187001051044143,5.075447221346296
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,2,"(100, 100)",tanh,auto,adam,0.001,constant,126,4.087059109930235,4.269639940889767,5.094968515651059
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,2,"(100, 200)",tanh,auto,adam,0.001,constant,111,4.096359749262415,4.219984656308147,5.076986035360877
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",tanh,auto,adam,0.001,constant,167,3.9091888289562418,4.4513435203209335,4.9083961958720055
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,4,"(50, 100, 200, 100)",tanh,auto,adam,0.001,constant,200,3.3321750335388556,4.519454194713965,5.04662613061333
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",relu,auto,adam,0.001,constant,200,3.219059221854926,4.746696750588024,5.244551252769503
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",logistic,auto,adam,0.001,constant,200,4.222995478367062,4.454517839066719,4.987628201249962
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",tanh,auto,adam,0.001,constant,167,3.9091888289562418,4.4513435203209335,4.9083961958720055
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",tanh,100,adam,0.001,constant,43,4.132101370276653,4.244666165339203,5.0931415732803895
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",tanh,500,adam,0.001,constant,200,3.9646899647422154,4.331469392209034,4.960581461845684
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",tanh,600,adam,0.001,constant,200,4.002185277005509,4.265539398952832,5.007810666698305
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",tanh,400,adam,0.001,constant,172,4.038819679311881,4.377358744985962,5.094832149806443
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",tanh,300,adam,0.001,constant,200,3.9386831650285807,4.441140427169502,4.951569365114667
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",tanh,200,adam,0.001,constant,167,3.9091888289562418,4.4513435203209335,4.9083961958720055
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",tanh,150,adam,0.001,constant,60,4.160141874340341,4.294444980663311,5.222771806187292
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",tanh,190,adam,0.001,constant,93,4.101488694219297,4.4323500166523475,4.951566157078068
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",tanh,195,adam,0.001,constant,166,3.861454320328295,4.35734172312236,4.883512033930908
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",tanh,198,adam,0.001,constant,64,4.134264104624359,4.253127785295519,4.981389325025714
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",tanh,196,adam,0.001,constant,167,3.926260631639449,4.483364799338703,4.916360113311917
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",tanh,192,adam,0.001,constant,63,4.147268196311731,4.248881268958687,5.062327097638419
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",tanh,194,adam,0.001,constant,100,4.052284556079694,4.2630442712300605,4.9772848149565085
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 100, 200)",tanh,195,adam,0.001,constant,166,3.861454320328295,4.35734172312236,4.883512033930908
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,2,"(100, 200)",tanh,195,adam,0.001,constant,111,4.100062789445821,4.227761648541795,5.082774363537028
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(100, 200, 100)",tanh,195,adam,0.001,constant,200,3.7215006141032436,4.566701611700152,5.089174107724773
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 200, 50)",tanh,195,adam,0.001,constant,139,3.8696697055937257,4.459837264321725,4.844053926807627
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(20, 200, 20)",tanh,195,adam,0.001,constant,200,3.8943571785247455,4.204245062124229,4.859335046542618
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(120, 200, 120)",tanh,195,adam,0.001,constant,87,3.890026612190602,4.413811184812601,4.827123586059205
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(130, 200, 130)",tanh,195,adam,0.001,constant,59,3.9712122368056333,4.288102012001484,4.92129832824254
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(110, 200, 110)",tanh,195,adam,0.001,constant,200,3.5009055016522224,4.45855377112512,4.993571811533194
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(80, 200, 80)",tanh,195,adam,0.001,constant,182,3.5960302435844493,4.4307254296474365,5.00431767049717
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 120, 50)",tanh,195,adam,0.001,constant,182,3.7505781777464975,4.381466456579533,4.833619860150261
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 50, 50)",tanh,195,adam,0.001,constant,200,3.847241374459576,4.314285425100733,4.819243445530717
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,1,200,tanh,195,adam,0.001,constant,200,4.179302788600092,4.198330746977772,5.079388575242524
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(40, 40, 40)",tanh,195,adam,0.001,constant,200,3.901895584491975,4.276862511451068,4.855524630157044
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(45, 45, 45)",tanh,195,adam,0.001,constant,155,3.9605656851581736,4.228893070430325,4.917875362890824
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(12, 12, 12)",tanh,195,adam,0.001,constant,200,4.607918177513078,4.273567922068837,5.485787485747616
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(60, 60, 60)",tanh,195,adam,0.001,constant,118,3.9059047829262443,4.255895632404777,4.823278916027461
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(50, 50, 50)",tanh,195,adam,0.001,constant,200,3.847241374459576,4.314285425100733,4.819243445530717
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(51, 51, 51)",tanh,195,adam,0.001,constant,121,3.9247724509269126,4.28517128951246,4.9177785109440455
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(55, 55, 55)",tanh,195,adam,0.001,constant,123,3.928091820588425,4.3723440316338,4.899947049768027
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,200,3.8064086115697204,4.3832494955038985,4.769972626239776
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,200,3.8064086115697204,4.3832494955038985,4.769972626239776
+1,3,"(49, 49, 49)",tanh,195,adam,0.001,constant,152,3.9604542147277906,4.3773352184921,5.000023071523261
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,200,3.8064086115697204,4.3832494955038985,4.769972626239776
+1,3,"(49, 49, 49)",tanh,195,adam,0.001,constant,152,3.9604542147277906,4.3773352184921,5.000023071523261
+2,3,"(50, 50, 50)",tanh,195,adam,0.001,constant,200,3.847241374459576,4.314285425100733,4.819243445530717
+3,3,"(51, 51, 51)",tanh,195,adam,0.001,constant,121,3.9247724509269126,4.28517128951246,4.9177785109440455
+4,3,"(52, 52, 52)",tanh,195,adam,0.001,constant,129,3.920913664174512,4.270247386200826,4.828133344822921
+5,3,"(53, 53, 53)",tanh,195,adam,0.001,constant,198,3.8994910089370114,4.377087546336451,4.981071036438485
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(46, 46, 46)",tanh,195,adam,0.001,constant,200,3.848417526327065,4.387252242819696,4.929564189840546
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(44, 44, 44)",tanh,195,adam,0.001,constant,200,3.9360273940321293,4.460810279978671,4.931356671441421
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(38, 38, 38)",tanh,195,adam,0.001,constant,200,3.895646247853267,4.232085211572065,4.842486089063609
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(28, 28, 28)",tanh,195,adam,0.001,constant,199,3.9479031533813,4.298730451151814,4.884266109731335
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(30, 30, 30)",tanh,195,adam,0.001,constant,200,3.933059218978182,4.32570103685629,4.94245138886297
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(24, 24, 24)",tanh,195,adam,0.001,constant,200,3.960874869688375,4.220555084644344,4.904832528723075
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,4,"(12, 12, 12, 12)",tanh,195,adam,0.001,constant,200,4.32417686853998,4.260344039379926,5.2613411966404415
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,5,"(24, 24, 24, 24, 24)",tanh,195,adam,0.001,constant,183,3.8977491903599653,4.3140156808714,4.911298421955088
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,5,"(48, 48, 48, 48, 48)",tanh,195,adam,0.001,constant,133,3.8906045607919464,4.356218998135946,4.821683346978001
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,200,3.8064086115697204,4.3832494955038985,4.769972626239776
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.0001,constant,200,5.338784792541487,4.858974599207249,6.154760954401763
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.01,constant,200,1.8386955433137537,5.4680066077604845,6.329105098838475
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,200,3.8064086115697204,4.3832494955038985,4.769972626239776
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,sgd,0.001,adaptive,200,3.9150826511423547,4.317396193025327,4.798902248545841
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,6,"(48, 48, 48, 48, 48, 48)",tanh,195,sgd,0.001,adaptive,192,3.8806567558524185,4.301463815282894,4.874921128474937
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,6,"(48, 48, 48, 48, 48, 48)",tanh,195,adam,0.001,constant,93,4.023309043533472,4.323566914821824,4.7997328012156215
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,200,3.8064086115697204,4.3832494955038985,4.769972626239776
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,1,"(100,)",relu,auto,adam,0.001,constant,200,4.09537270978591,4.35483248228139,5.13649173600798
+1,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,200,3.8064086115697204,4.3832494955038985,4.769972626239776
+2,3,"(49, 49, 49)",tanh,195,adam,0.001,constant,152,3.9604542147277906,4.3773352184921,5.000023071523261
+3,3,"(50, 50, 50)",tanh,195,adam,0.001,constant,200,3.847241374459576,4.314285425100733,4.819243445530717
+4,3,"(51, 51, 51)",tanh,195,adam,0.001,constant,121,3.9247724509269126,4.28517128951246,4.9177785109440455
+5,3,"(52, 52, 52)",tanh,195,adam,0.001,constant,129,3.920913664174512,4.270247386200826,4.828133344822921
+6,3,"(48, 48, 48)",relu,195,adam,0.001,constant,142,3.7702048556565737,4.374595968929278,5.217631503532331
+7,3,"(48, 48, 48)",logistic,195,adam,0.001,constant,200,4.358589078011963,4.554305897640851,5.12342362128813
+8,3,"(48, 48, 48)",tanh,250,adam,0.001,constant,200,3.854621036986691,4.338774600724211,4.759498577738945
+9,3,"(48, 48, 48)",tanh,150,adam,0.001,constant,180,3.795809384794882,4.420144433275175,4.964485121386296
+10,3,"(48, 48, 48)",tanh,195,adam,0.0001,constant,200,5.338784792541487,4.858974599207249,6.154760954401763
+11,3,"(48, 48, 48)",tanh,195,adam,0.01,constant,200,1.8386955433137537,5.4680066077604845,6.329105098838475
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",relu,195,adam,0.001,constant,98,5.756132883771346,5.347876429216576,6.586740322742338
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",relu,195,adam,0.001,constant,76,5.86093380236754,5.415433180166968,6.738740333948955
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",relu,195,adam,0.001,constant,102,5.751547190871217,5.340444743385966,6.806456135101031
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",relu,195,adam,0.001,constant,62,6.3658432503261855,5.704026398784069,7.2592247927808495
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",relu,195,adam,0.001,constant,52,6.783385674695011,5.962399560987276,7.658798751925555
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",relu,195,adam,0.001,constant,98,6.685639686710753,5.860695062507544,7.6410096304517
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",relu,195,adam,0.001,constant,99,7.483828011010461,6.438072184076786,8.520440845508315
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",relu,195,adam,0.001,constant,83,6.926837397229034,5.897744210940128,7.837819788731104
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",relu,195,adam,0.001,constant,24,9.658446365063144,8.413023515394585,10.703218990911719
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",relu,195,adam,0.001,constant,35,8.273669192216548,7.439071819580855,9.414311074756126
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",relu,195,adam,0.001,constant,26,9.828183527754613,8.829642061657061,11.459645650937988
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",relu,195,adam,0.001,constant,27,8.261657494240504,7.394246103622256,9.339303278836798
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",relu,195,adam,0.001,constant,126,3.9071252131866374,4.287781379530076,5.073920480213799
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",relu,195,adam,0.001,constant,200,3.9314254470931513,4.799299033604079,5.690836734131078
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",relu,195,adam,0.001,constant,142,3.7702048556565737,4.374595968929278,5.217631503532331
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,200,3.8064086115697204,4.3832494955038985,4.769972626239776
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,129,4.066487301165727,4.242940785559183,4.907921759813744
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,175,4.490880131673482,4.866539075380627,5.683407912106112
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,200,3.919228430326097,4.262237871916641,4.763211641493932
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,200,3.8064086115697204,4.3832494955038985,4.769972626239776
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,200,3.919228430326097,4.262237871916641,4.763211641493932
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,145,4.133000505171162,4.1843740551461135,4.966372159629403
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,175,4.061106563301843,4.112630194759531,4.8632638927760246
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,175,4.04506113588448,4.238610648630721,5.002538469055572
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,200,4.630744665899064,4.767498898578345,5.845262287180247
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,144,4.272060975036608,4.483043294616716,5.191354139119932
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,177,3.974560096730174,4.235940332675422,4.859666510018517
+id,hidden_layers,architecture,activation,batch_size,solver,learning_rate_init,learning_rate,iterations,train_score,val_score,test_score
+0,3,"(48, 48, 48)",tanh,195,adam,0.001,constant,177,3.998463432200027,4.2250153173254335,4.893547300021802
