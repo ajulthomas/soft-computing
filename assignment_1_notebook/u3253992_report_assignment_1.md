@@ -1,3 +1,14 @@
+---
+title: "Assignment 1: Review and Critique of Research Paper & Methodology"
+author: Ajul Thomas
+date: August 30, 2024
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 3
+    path: /exports/u3253992_ajul_thomas_assignment_1.pdf
+---
+
 # Assignment 1
 
 ## Soft Computing PG (7197)
@@ -42,6 +53,12 @@ This model was intended to test the performance of the model, after feature engi
 **Evaluation metrics:** RMSE and MAE scores were used to evaluate the performance of the model.
 **Observations:**
 
+| **Model Params** | **Train** **(rmse)**  | **Validate** **(rmse)** |  **Test** **(rmse)**  | **Evaluate** **(rmse)** |
+| :--------------: | :-------------------: | :---------------------: | :-------------------: | :---------------------: |
+|  default_params  | 0.005878661190833931  |  0.005844193387682432   | 0.006093833720059899  |  0.0059242788541034415  |
+|    params_one    | 0.0049782769073360225 |  0.005092708145074442   | 0.0052295245170103765 |  0.005039975722926263   |
+|    params_two    | 0.004997878889105543  |  0.005126282787313408   |  0.0052903190521238   |  0.005069214445085569   |
+
 ### Other Model 3
 
 This model evaluates the model after addition of more features and uses standardisation and transformation techniques.
@@ -54,6 +71,12 @@ This model evaluates the model after addition of more features and uses standard
 
 **Observations:**
 
+| **Model Params** | **Train** **(rmse)**  | **Validate** **(rmse)** | **Test** **(rmse)**  | **Evaluate** **(rmse)** |
+| :--------------: | :-------------------: | :---------------------: | :------------------: | :---------------------: |
+|  default_params  | 0.0068574568517373235 |  0.007020733591741029   | 0.007275347894259288 |   0.00695737272582952   |
+|    params_one    | 0.006120345806405142  |  0.006308155320899452   | 0.006538339639785879 |  0.006222735763526444   |
+|    params_two    | 0.006276799679741773  |  0.006518804555387753   | 0.006686550020099288 |  0.006382960851495031   |
+
 ### Final Model
 
 This model evaluates the model after addition of more features and uses standardisation and transformation techniques.
@@ -65,3 +88,24 @@ This model evaluates the model after addition of more features and uses standard
 **Evaluation metrics:** RMSE and MAE scores were used to evaluate the performance of the model.
 
 **Observations:**
+
+| **Model Params** | **Train** **(rmse)** | **Validate** **(rmse)** |  **Test** **(rmse)**  | **Evaluate** **(rmse)** |
+| :--------------: | :------------------: | :---------------------: | :-------------------: | :---------------------: |
+|  default_params  | 0.006796070283839948 |  0.007285995978415394   |  0.00728418528200731  |  0.0069427005159541965  |
+|    params_one    | 0.004792246505649399 |  0.004999201637891569   | 0.005078654152523908  |  0.004870231346732643   |
+|    params_two    | 0.005080281136352966 |  0.005388566824830438   | 0.0054764990968533475 |  0.005190364305617732   |
+
+### Key Findings / Observations
+
+```
+**Note:**
+
+More experiments were performed on the dataset, Only the best params that works for these datasets were only recorded in this report.
+
+```
+
+- `relu` is the best activation function, which provides the highest performance scores
+- the best achitecture in my experiments is `(12, 24, 48, 96)`
+- smaller batch sizes performes well
+- learning rate of `0.001` gives best results
+- feature engineering is key to better results
