@@ -1,2 +1,5 @@
 data/card.csv
 data/abalone.csv
+
+**/*.zip
+**/*.7z
