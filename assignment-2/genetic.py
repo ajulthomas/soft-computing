@@ -35,24 +35,31 @@ def generate_chromosome(l: int) -> Chromosome:
 
 
 # function to gnerate the initial population
-def generate_initial_population(size: int) -> Population:
-    return [generate_chromosome(50) for _ in range(size)]
+def generate_initial_population(
+    chromosome_size: int, population_size: int
+) -> Population:
+    return [generate_chromosome(chromosome_size) for _ in range(population_size)]
 
 
 # mutation - change a random gene in the chromosome
-def mutate(chromosome: Chromosome) -> Chromosome:
-    # get the index of the chromosome where the gene values is greater than 1
-    index_list = [i for i in range(len(chromosome)) if chromosome[i] > 1]
+# implments swap mutation
+def mutate(chromosome: Chromosome, mutation_rate: float) -> Chromosome:
+    # if the mutation rate is less than the random value, return the chromosome
+    if randint(0, 100) < mutation_rate * 100:
+        # get the length of the chromosome
+        l = len(chromosome)
 
-    # there will always be at least one gene with value greater than 1
-    index = choice(index_list)
+        # get the mutation point
+        mutation_point_1 = randint(0, l - 1)
 
-    # decrease the value of the gene by 1
-    chromosome[index] -= 1
+        # get the mutation point
+        mutation_point_2 = randint(0, l - 1)
 
-    # increase the value of a random gene by 1
-    index = randint(0, len(chromosome) - 1)
-    chromosome[index] += 1
+        # swap the two genes
+        chromosome[mutation_point_1], chromosome[mutation_point_2] = (
+            chromosome[mutation_point_2],
+            chromosome[mutation_point_1],
+        )
 
     return chromosome
 
@@ -110,6 +117,20 @@ def crossover(
         crossover_attempts += 1
 
     return child_chromosome, crossover_attempts
+
+
+# tournament selection
+def tournament_selection(population: Population, tournament_size: int) -> Chromosome:
+    # get the length of the population
+    l = len(population)
+
+    # get the tournament participants
+    participants = [choice(population) for _ in range(tournament_size)]
+
+    # get the best participant
+    best_participant = min(participants, key=lambda x: fitness(x))
+
+    return best_participant
 
 
 # evolve the population
