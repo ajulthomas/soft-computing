@@ -36,21 +36,13 @@ def fitness_function(employee_setting: EmployeeSetting) -> float:
 
     return fitness
 
-
 def main():
-    # create a genetic algorithm object
-    genetic_algorithm = GA.GeneticAlgorithm(
-        population_size=100,
-        chromosome_length=50,
-        fitness_fn=fitness_function,
-        crossover_type="single",
-        mutation_rate=0.1,
-    )
+    population_size = 10
+    chromosome_length = 50
+    ga = GA.GeneticAlgorithm(population_size, chromosome_length, 0, fitness_function)
+    ga.evolve()
+    print(ga)
 
-    # run the genetic algorithm
-    genetic_algorithm.run()
 
+if __name__ == "__main__":
     main()
-
-
-
