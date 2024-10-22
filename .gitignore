@@ -3,3 +3,5 @@ data/abalone.csv
 
 **/*.zip
 **/*.7z
+
+__pycache__

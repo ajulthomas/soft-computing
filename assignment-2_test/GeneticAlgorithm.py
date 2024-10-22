@@ -37,7 +37,7 @@ class GeneticAlgorithm:
         self.initialize()
 
     def initialize(self):
-        print("initializing the population..........")
+        # print("initializing the population..........")
         population = Population(
             population_size=self.population_size,
             chromosome_length=self.chromosome_length,
@@ -64,7 +64,7 @@ class GeneticAlgorithm:
         population = self.generations[g - 1].population
 
         # get the other parents size
-        parents_size = (self.population_size - 2) // 2
+        parents_size = (self.population_size - 20) // 2
         parents = []
 
         if self.selection_method == "tournament":
@@ -84,7 +84,7 @@ class GeneticAlgorithm:
 
     def crossover(self):
 
-        print("initiating crossover..........")
+        # print("initiating crossover..........")
 
         # get the current generation
         g = self.generation_count
@@ -93,7 +93,7 @@ class GeneticAlgorithm:
         parents = self.generations[g].parents
 
         # get the elites from the previous generation
-        elites = self.generations[g - 1].population[:2]
+        elites = self.generations[g - 1].population[:20]
 
         # get the crossover method
         crossover_method = self.crossover_method
@@ -168,58 +168,7 @@ class GeneticAlgorithm:
     def run(self):
         while self.generation_count < self.max_generations:
             self.generation_count += 1
+            print(f"\nGeneration: {self.generation_count}")
+            print("\n----------------------------------------\n")
             self.evolve()
-
-            # if self.generation_count == 20:
-            #     break
-        print(self)
-
-
-# define employee setting as a list of integers
-EmployeeSetting = List[int]
-
-
-# define the fitness function
-def fitness_function(employee_setting: EmployeeSetting) -> float:
-    # if the total number of employee is not 80, return a high fitness value
-    if sum(employee_setting) != 80:
-        return 1000000
-
-    # simulate the service with the given employee setting
-    # and calculate the average waiting time
-    _, wait_times_per_service = service_simulator.init_and_simulate(employee_setting)
-    sums = [
-        np.sum(wait_times_per_service[j]) for j in range(len(wait_times_per_service))
-    ]
-    counts = [
-        len(wait_times_per_service[j]) for j in range(len(wait_times_per_service))
-    ]
-    mean_wait_time = np.sum(sums) / np.sum(counts)
-
-    # maximum waiting time
-    maximums = [
-        np.max(wait_times_per_service[j]) for j in range(len(wait_times_per_service))
-    ]
-    max_wait_time = np.max(maximums)
-
-    # create a fitness value giving 80% weight to the average waiting time
-    # and 20% weight to the maximum waiting time
-    fitness = 0.8 * mean_wait_time + 0.2 * max_wait_time
-
-    return fitness
-
-
-def main():
-    population_size = 10
-    chromosome_length = 50
-    ga = GeneticAlgorithm(
-        population_size=population_size,
-        chromosome_length=chromosome_length,
-        fitness_fn=fitness_function,
-        crossover_method="uniform",
-    )
-    ga.run()
-
-
-if __name__ == "__main__":
-    main()
+            print(self)

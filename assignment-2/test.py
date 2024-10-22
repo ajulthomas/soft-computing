@@ -36,13 +36,60 @@ def fitness_function(employee_setting: EmployeeSetting) -> float:
 
     return fitness
 
+
 def main():
     population_size = 10
     chromosome_length = 50
-    ga = GA.GeneticAlgorithm(population_size, chromosome_length, 0, fitness_function)
-    ga.evolve()
-    print(ga)
+    ga = GA.GeneticAlgorithm(
+        population_size=population_size,
+        chromosome_length=chromosome_length,
+        fitness_fn=fitness_function,
+        crossover_method="uniform",
+    )
+    ga.run()
 
 
 if __name__ == "__main__":
-    main()
+    # main()
+    service_simulator.init_and_simulate(80)
+
+
+# class Evolution:
+#     def __init__(self):
+#         self.generations = []
+#         self.current_generation = 0
+#         self.largest_number = 100
+
+#     def __str__(self):
+#         return f"\nCurrent generation: {self.current_generation}, Largest number: {self.largest_number}\n"
+
+#     def evolve(self):
+
+#         # evolve the population
+#         while self.current_generation < 10:
+#             population = Population()
+#             population.create_numbers()
+#             self.generations.append(population)
+
+#             # if the largest number in the population is greater than the current largest number
+#             if population.largest_number < self.largest_number:
+#                 self.largest_number = population.largest_number
+
+#             self.current_generation += 1
+
+#         print(self)
+
+
+# class Population:
+#     def __init__(self):
+#         self.largest_number = 100
+#         self.numbers = []
+
+#     def create_numbers(self):
+#         # randomly generate 10 numbers between 0 and 100
+#         numbers = np.random.randint(0, 100, 10)
+#         self.largest_number = min(numbers)
+#         print(f"\nNumbers: {numbers}, Largest number: {self.largest_number}\n")
+
+
+# Evolution().evolve()
