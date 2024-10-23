@@ -1,6 +1,6 @@
 from random import randint, choice, choices, sample
 from typing import List, Tuple
-from Individual import Individual
+from Individual import Individual, Chromosome
 
 
 class Crossover:
@@ -23,6 +23,10 @@ class Crossover:
         child2 = (
             parent2.chromosome[:crossover_point] + parent1.chromosome[crossover_point:]
         )
+
+        # validate and correct the children
+        child1 = Crossover.validate_and_correct(child1)
+        child2 = Crossover.validate_and_correct(child2)
 
         return Individual(child1), Individual(child2)
 
@@ -48,6 +52,10 @@ class Crossover:
             + parent2.chromosome[crossover_points[1] :]
         )
 
+        # validate and correct the children
+        child1 = Crossover.validate_and_correct(child1)
+        child2 = Crossover.validate_and_correct(child2)
+
         return Individual(child1), Individual(child2)
 
     @staticmethod
@@ -64,4 +72,87 @@ class Crossover:
                 child1.append(gene2)
                 child2.append(gene1)
 
+        # validate and correct the children
+        child1 = Crossover.validate_and_correct(child1)
+        child2 = Crossover.validate_and_correct(child2)
+
         return Individual(child1), Individual(child2)
+
+    @staticmethod
+    def validate_and_correct(child: Chromosome) -> Chromosome:
+        """Validates and corrects the child chromosome."""
+        if sum(child) != 80:
+            if sum(child) > 80:
+                diff = sum(child) - 80
+                while diff > 0:
+                    index = randint(0, len(child) - 1)
+                    if child[index] > 1:
+                        child[index] -= 1
+                        diff -= 1
+            else:
+                diff = abs(sum(child) - 80)
+                while diff > 0:
+                    index = randint(0, len(child) - 1)
+                    child[index] += 1
+                    diff -= 1
+
+        return child
+
+
+# chromosome = [
+#     1,
+#     1,
+#     2,
+#     1,
+#     2,
+#     1,
+#     2,
+#     1,
+#     1,
+#     2,
+#     1,
+#     1,
+#     2,
+#     1,
+#     2,
+#     1,
+#     1,
+#     1,
+#     2,
+#     1,
+#     1,
+#     1,
+#     1,
+#     2,
+#     1,
+#     1,
+#     2,
+#     2,
+#     1,
+#     1,
+#     3,
+#     1,
+#     1,
+#     1,
+#     1,
+#     1,
+#     1,
+#     1,
+#     3,
+#     1,
+#     1,
+#     2,
+#     1,
+#     1,
+#     1,
+#     2,
+#     2,
+#     1,
+#     1,
+#     31,
+# ]
+# print(sum(chromosome))
+
+# Crossover.validate_and_correct(chromosome)
+
+# print(sum(chromosome))

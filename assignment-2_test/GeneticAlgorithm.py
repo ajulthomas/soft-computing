@@ -138,17 +138,20 @@ class GeneticAlgorithm:
         cp_best_individual = copy.deepcopy(current_population.best_individual)
 
         # generation best individual
-        gn_best_individual = self.best_individual
+        gn_best_individual = copy.deepcopy(self.best_individual)
 
         if cp_best_individual.fitness < gn_best_individual.fitness:
 
-            # changes the best individual
-            self.best_individual = cp_best_individual
+            # print about the change
+            print(
+                f"\nChanging GA best individual from {gn_best_individual.fitness} to {cp_best_individual.fitness}\n"
+            )
 
-            # resets the patience
+            # changes the best individual
+            self.best_individual = copy.deepcopy(cp_best_individual)
+
+            # reset the patience
             self.patience = self.max_patience
-        else:
-            self.patience -= 1
 
     def evolve(self):
         # create new population instrance
@@ -165,10 +168,31 @@ class GeneticAlgorithm:
         self.mutate()
         self.evaluate_generation()
 
+    def stop_condition(self, fitness_scores):
+        # stop if the fitness score is not improving
+        if len(fitness_scores) > 1:
+            if fitness_scores[-1] == fitness_scores[-2]:
+                self.patience -= 1
+
+        # stop if patience is 0
+        if self.patience == 0:
+            return True
+
+        return False
+
     def run(self):
+        # variable to store the fitness score over the generations
+        fitness_scores = []
         while self.generation_count < self.max_generations:
             self.generation_count += 1
             print(f"\nGeneration: {self.generation_count}")
             print("\n----------------------------------------\n")
             self.evolve()
             print(self)
+            fitness_scores.append(self.best_individual.fitness)
+
+            # stop if the fitness score is not improving
+            if self.stop_condition(fitness_scores):
+                break
+
+        return fitness_scores, self.best_individual.chromosome

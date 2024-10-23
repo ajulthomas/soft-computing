@@ -2,6 +2,7 @@ import GeneticAlgorithm as GA
 import service_simulator
 from typing import List
 import numpy as np
+from utilities import results, plot_results
 
 # define employee setting as a list of integers
 EmployeeSetting = List[int]
@@ -40,16 +41,19 @@ def fitness_function(employee_setting: EmployeeSetting) -> float:
 def main():
     # create a genetic algorithm object
     genetic_algorithm = GA.GeneticAlgorithm(
-        population_size=100,
+        population_size=50,
         chromosome_length=50,
         fitness_fn=fitness_function,
-        crossover_method="two",
+        crossover_method="uniform",
         selection_method="roulette",
         mutation_rate=0.1,
+        max_generations=100,
     )
 
     # run the genetic algorithm
-    genetic_algorithm.run()
+    fitness_scores, best_employee_setting = genetic_algorithm.run()
+    results(best_employee_setting)
+    plot_results(fitness_scores)
 
 
 if __name__ == "__main__":
