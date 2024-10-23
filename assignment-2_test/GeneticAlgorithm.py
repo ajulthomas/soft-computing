@@ -17,7 +17,7 @@ class GeneticAlgorithm:
         chromosome_length,
         fitness_fn,
         mutation_rate=0.01,
-        patience=10,
+        patience=20,
         max_generations=100,
         selection_method="roulette",
         crossover_method="single",

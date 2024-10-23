@@ -38,22 +38,22 @@ def fitness_function(employee_setting: EmployeeSetting) -> float:
     return fitness
 
 
-def main():
+def main(crossover_method: str = "uniform", selection_method: str = "roulette") -> None:
     # create a genetic algorithm object
     genetic_algorithm = GA.GeneticAlgorithm(
         population_size=50,
         chromosome_length=50,
         fitness_fn=fitness_function,
-        crossover_method="uniform",
-        selection_method="roulette",
+        crossover_method=crossover_method,
+        selection_method=selection_method,
         mutation_rate=0.1,
         max_generations=100,
     )
 
     # run the genetic algorithm
     fitness_scores, best_employee_setting = genetic_algorithm.run()
-    results(best_employee_setting)
-    plot_results(fitness_scores)
+    results(best_employee_setting, crossover_method, selection_method)
+    plot_results(fitness_scores, crossover_method, selection_method)
 
 
 if __name__ == "__main__":

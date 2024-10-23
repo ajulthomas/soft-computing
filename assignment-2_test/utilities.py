@@ -8,7 +8,9 @@ import matplotlib.pyplot as plt
 EmployeeSetting = List[int]
 
 
-def results(employee_setting: EmployeeSetting):
+def results(
+    employee_setting: EmployeeSetting, crossover_method: str, selection_method: str
+) -> None:
     _x, wait_times_per_service = service_simulator.init_and_simulate(employee_setting)
     sums = [
         np.sum(wait_times_per_service[j]) for j in range(len(wait_times_per_service))
@@ -16,6 +18,17 @@ def results(employee_setting: EmployeeSetting):
     counts = [
         len(wait_times_per_service[j]) for j in range(len(wait_times_per_service))
     ]
+
+    print(
+        f"\n GA Results [crossover_method: {crossover_method}, selection_method: {selection_method}] : \n"
+    )
+
+    print(
+        f"-------------------------------------------------------------------------------------------------\n"
+    )
+
+    print("Best Employee Setting: ", employee_setting)
+
     print("Mean waiting time for all services", np.sum(sums) / np.sum(counts))
 
     maximums = [
@@ -23,8 +36,14 @@ def results(employee_setting: EmployeeSetting):
     ]
     print("Max time waited by a customer", np.max(maximums))
 
+    print(
+        f"\n-------------------------------------------- END ------------------------------------------------\n"
+    )
 
-def plot_results(fitness_scores: List[float]):
+
+def plot_results(
+    fitness_scores: List[float], crossover_method: str, selection_method: str
+) -> None:
     # generations
     x = [i for i in range(1, len(fitness_scores) + 1)]
 
@@ -34,8 +53,15 @@ def plot_results(fitness_scores: List[float]):
     plt.plot(x, y)
     plt.xlabel("Generation")
     plt.ylabel("Fitness Score")
-    plt.title("Fitness Score vs Generation")
+    plt.title(
+        f"Fitness Score vs Generation [crossover_method: {crossover_method}, selection_method: {selection_method}]"
+    )
     plt.show()
+
+    # save the plot to './output/fitness_score_vs_generation_{crossover_method}_{selection_method}.png
+    plt.savefig(
+        f"./output/fitness_score_vs_generation_{crossover_method}_{selection_method}.png"
+    )
 
 
 # for i in range(10):
