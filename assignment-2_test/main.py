@@ -47,7 +47,8 @@ def main(crossover_method: str = "uniform", selection_method: str = "roulette") 
         crossover_method=crossover_method,
         selection_method=selection_method,
         mutation_rate=0.1,
-        max_generations=100,
+        patience=50,
+        max_generations=500,
     )
 
     # run the genetic algorithm

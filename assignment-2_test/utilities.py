@@ -59,9 +59,9 @@ def plot_results(
     plt.show()
 
     # save the plot to './output/fitness_score_vs_generation_{crossover_method}_{selection_method}.png
-    plt.savefig(
-        f"./output/fitness_score_vs_generation_{crossover_method}_{selection_method}.png"
-    )
+    # plt.savefig(
+    #     f"./output/fitness_score_vs_generation_{crossover_method}_{selection_method}.png"
+    # )
 
 
 # for i in range(10):
